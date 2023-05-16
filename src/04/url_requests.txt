@@ -1,0 +1,5 @@
+/home
+/work
+/services
+/support
+/index
