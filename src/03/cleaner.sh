@@ -36,7 +36,8 @@ function clean {
     elif [[ "$p1" -eq "3" ]];then
         sudo chown -R $user /lost+found/
         sudo chown -R $user /root/
-        name_mask=$(sudo find / -regextype posix-extended -regex '^/(.*\/)*[a-zA-Z]+_[0-9]{6}')
+        name_mask=$(sudo find / -regextype posix-extended -regex '^/(.*\/)*[a-zA-Z]+_[0-9]{6}') 
+        #regex for find folders and files
         help_name_mask=${name_mask: -8}
         if [[ $name_mask != "" ]]; then
             echo $name_mask
